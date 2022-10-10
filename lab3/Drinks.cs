@@ -6,7 +6,14 @@ using System.Threading.Tasks;
 
 namespace lab3
 {
-    internal class Drinks
+    public class Drink
     {
+        public int Vol = 0;
+        public virtual String GetInfo()
+        {
+            var str = String.Format("\nОбъём: {0}", this.Vol);
+            return str;
+
+        }
     }
 }
